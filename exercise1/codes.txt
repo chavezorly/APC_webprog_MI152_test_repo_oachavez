@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>My Home Page</title>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+</style>
+</head>
+
+<h1><font color ="white">About Me</font></h1>
+<body background ="back.jpg">
+
+<table>
+  <tr>	
+    <th style="background-color:#404040"><font color ="white"> Name </font> </th>
+	
+    <th style="background-color:#404040"><font color ="white">Nickname</font></th> 
+    <th style="background-color:#404040"><font color ="white">Hobbies</font></th>
+	<th style="background-color:#404040"><font color ="white">Interests</font></th>
+	<th style="background-color:#404040"><font color ="white">Favortie Websites</font></th>	
+  </tr>
+  <tr>
+    <td><font color ="white">Orly Aguila Chavez</font></td>
+    <td><font color ="white">Orly</font></td>
+    <td>
+	<font color ="white">Playing Volleyball</font> <br>
+	<img src="volley.jpg" style="width:304px;height:180px;"> <br>
+	<font color ="white">Basketball</font> <br>
+	<img src="bask.jpg" style="width:304px;height:180px;"> <br>	
+	<font color ="white">Guitar</font> <br>
+	<img src="guit.jpg" style="width:304px;height:180px;"> <br>	
+	<font color ="white">Computer Games</font> <br>
+	<img src="comp.jpg" style="width:304px;height:180px;">
+	</td>
+	
+	<td>
+	<font color ="white">Java Programming </font><br>
+	<img src="java.gif" alt="Java" style="width:304px;height:180px;"> <br>
+	<font color ="white">Visual Basic Programming </font><br>
+	<img src="vb.gif" alt="Visual Basic" style="width:304px;height:180px;"> <br>
+	<font color ="white">Database </font><br>
+	<img src="database.gif" alt="Database" style="width:304px;height:180px;"> <br>
+	<font color ="white">HTML</font> <br>
+	<img src="html1.gif" alt="HTML5 Icon" style="width:304px;height:180px;"> 
+	
+	</td>
+	<td>
+	<a href="http://www.w3schools.com"><font color ="white">W3Schools</font></a> <br>
+	<a href="https://www.khanacademy.org"><font color ="white">KhanAcademy</a></font> <br>
+	<a href="https://www.facebook.com"><font color ="white">Facebook</font></a> <br>
+	<a href="https://www.youtube.com"><font color ="white">Youtube</font></a>
+	</td>
+  </tr
+</table>
+
+</body>
+</html>
+
