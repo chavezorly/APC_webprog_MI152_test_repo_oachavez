@@ -1,0 +1,35 @@
+body {
+    background-image: url("back.jpg");
+}
+
+table {
+    font-family: arial, serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid white;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid white;
+}
+
+h1{
+	color: rgb(100, 150, 100);
+}
+
+th{
+font-size: 20px;
+color: rgb(100, 100, 250);
+background-color: #404040;
+}
+
+td{
+color: white;
+}
+
+a{
+color :white;
+}
