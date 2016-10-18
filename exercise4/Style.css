@@ -1,0 +1,91 @@
+body {
+    background-image: url("back.jpg");
+}
+
+table {
+    font-family: arial, serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 3px solid white;
+}
+
+.tables{
+position:absolute;
+}
+
+.trivia{
+top: 980px;
+position:absolute;
+color: white;
+border: 5px solid white;
+left: 10px;
+width: 50%
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid white;
+}
+
+th{
+font-size: 20px;
+background-color: #404040;
+}
+
+td, .question{
+color: rgb(156, 159, 163);
+}
+
+a{
+color :white;
+}
+
+h2{
+color: rgb(56, 159, 163);
+font-size: 30px;
+}	
+
+#note{
+color: red;
+font-family: monospace;
+font-size: 15px;
+margin: auto;
+}
+
+#input{
+font-size: 25px; 
+}
+
+#changefont{
+position: absolute;
+top:980px;
+left:60%;
+color: rgb(56, 159, 163);
+}
+
+#changefontsize{
+position: absolute;
+top:1000px;
+left:60%;
+color: rgb(56, 159, 163);
+}
+
+#note2{
+color: red;
+font-family: monospace;
+font-size: 15px;
+margin: auto;
+position: absolute;
+top: 1020px;
+left: 60%;
+}
+
+.error {
+color: #FF0000;
+}
+
+form{
+color: rgb(156, 159, 163);
+}
