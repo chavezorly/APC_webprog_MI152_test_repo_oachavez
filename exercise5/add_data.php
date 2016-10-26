@@ -1,15 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?php      
+<?php
 include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
 {
- // variables for input data       
+ // variables for input data
  $firstname = $_POST['firstname'];
  $lastname = $_POST['lastname'];
  $midname = $_POST['midname'];
- $email = $_POST
+ $email = $_POST['email'];
+ $gender = $_POST['gender'];
+ $nickname = $_POST['nickname'];
+ $homeadd = $_POST['homeadd'];
+ $cellno = $_POST['cellno'];
+ $comment = $_POST['comment'];
+ // variables for input data
+ 
+ // sql query for inserting data into database
+ 
+        $sql_query = "INSERT INTO users(lastname,firstname,midname,email,gender,nickname,homeadd,cellno,comment) VALUES('$lastname','$firstname','$midname','$email','$gender','$nickname','$homeadd','$cellno','$comment')";
+ mysql_query($sql_query);
+        
         // sql query for inserting data into database
  
+}
+
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="Style.css" type="text/css" />
+</head>
+<body>
 <center>
 
 <?php
