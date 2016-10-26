@@ -9,7 +9,7 @@ if(isset($_POST['btn-save']))
  $midname = $_POST['midname'];
  $email = $_POST['email'];
  $gender = $_POST['gender'];
- $nickname = $_POST['nickname'];
+ $nickname = $_POST['nickname']; 
  $homeadd = $_POST['homeadd'];
  $cellno = $_POST['cellno'];
  $comment = $_POST['comment'];
