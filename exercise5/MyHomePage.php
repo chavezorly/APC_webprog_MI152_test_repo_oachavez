@@ -5,20 +5,7 @@ if(isset($_GET['delete_id']))
 {
  $sql_query="DELETE FROM users WHERE user_id=".$_GET['delete_id'];
  mysql_query($sql_query);
- header("Location: $_SERVER[PHP_SELF]");
-}                      
-// delete condition
-?>  
-<!DOCTYPE html>
-<html lang="en-US">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<head>  
-<script type="text/javascript">
-function edt_id(id)
-{
- if(confirm('Are yo sure you want to edit ?'))
- {
-  window.location.href='edit_data.php?edit_id='+id;
+ header("id;
  }
 }
 function delete_id(id)
