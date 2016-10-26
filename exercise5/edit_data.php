@@ -18,15 +18,6 @@ if(isset($_GET['edit_id']))
   alert('Data Are Updated Successfully');
   window.location.href='MyHomePage.php';
   </script>
-  <?php
- }
- else
- {
-  ?>
-  <script type="text/javascript">
-  alert('error occured while updating data');
-  </script>
-  <?php
  }
  // sql query execution function
 }
