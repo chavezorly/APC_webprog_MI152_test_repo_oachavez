@@ -1,18 +1,46 @@
 <?php
-include_once 'dbconfig.php';            
+include_once 'dbconfig.php';
 if(isset($_GET['edit_id']))
 {
  $sql_query="SELECT * FROM users WHERE user_id=".$_GET['edit_id'];
  $result_set=mysql_query($sql_query);
  $fetched_row=mysql_fetch_array($result_set);
 }
- // sql query for 
+if(isset($_POST['btn-update']))
+{
+ // variables for input data
+$firstname = $_POST['firstname'];
+ $lastname = $_POST['lastname'];
+ $midname = $_POST['midname'];
+ $email = $_POST['email'];
+ $gender = $_POST['gender'];
+ $nickname = $_POST['nickname'];
+ $homeadd = $_POST['homeadd'];
+ $cellno = $_POST['cellno'];
+ $comment = $_POST['comment'];
+ // variables for input data
+
+ // sql query for update data into database
+ $sql_query = "UPDATE users SET  lastname='$lastname', firstname='$firstname', midname='$midname', email='$email', gender='$gender', nickname='$nickname', homeadd='$homeadd', cellno='$cellno', comment='$comment' WHERE user_id=".$_GET['edit_id'];
+ // sql query for update data into database
+ 
+ // sql query execution function
+ if(mysql_query($sql_query))
  {
   ?>
   <script type="text/javascript">
   alert('Data Are Updated Successfully');
   window.location.href='MyHomePage.php';
   </script>
+  <?php
+ }
+ else
+ {
+  ?>
+  <script type="text/javascript">
+  alert('error occured while updating data');
+  </script>
+  <?php
  }
  // sql query execution function
 }
