@@ -7,7 +7,7 @@ if(isset($_GET['delete_id']))
  mysql_query($sql_query);
  header("Location: $_SERVER[PHP_SELF]");
 }
-// delete condition 
+// delete condition
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
