@@ -1,17 +1,41 @@
 body {
     background-image: url("back.jpg");
 }
-    
+
 table {
     font-family: arial, serif;
     border-collapse: collapse;
     width: 100%;
     border: 3px solid white;
-    color: rgb(213, 221, 234);  
+    color: rgb(213, 221, 234);
+}
+
+.tables{
+position:absolute;
+}
+
+.trivia{
+top: 980px;
+position:absolute;
+color: white;
+border: 5px solid white;
+left: 10px;
+width: 50%
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid white;
 }
 
 th{
 font-size: 20px;
+background-color: #404040;
+}
+
+td, .question{
 color: rgb(156, 159, 163);
 }
 
