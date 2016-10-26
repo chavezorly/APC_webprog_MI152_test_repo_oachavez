@@ -10,14 +10,6 @@ if(isset($_POST['btn-save']))
  $email = $_POST
         // sql query for inserting data into database
  
-}
-
-?>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" contene="text/css" />
-</head>
-<body>
 <center>
 
 <?php

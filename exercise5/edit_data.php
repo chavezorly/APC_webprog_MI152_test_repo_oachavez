@@ -6,12 +6,7 @@ if(isset($_GET['edit_id']))
  $result_set=mysql_query($sql_query);
  $fetched_row=mysql_fetch_array($result_set);
 }
- // sql query for update data into database
- $sql_query = "UPDATE users SET  lastname='$lastname', firstname='$firstname', midname='$midname', email='$email', gender='$gender', nickname='$nickname', homeadd='$homeadd', cellno='$cellno', comment='$comment' WHERE user_id=".$_GET['edit_id'];
- // sql query for update data into database
- 
- // sql query execution function
- if(mysql_query($sql_query))
+ // sql query for 
  {
   ?>
   <script type="text/javascript">
