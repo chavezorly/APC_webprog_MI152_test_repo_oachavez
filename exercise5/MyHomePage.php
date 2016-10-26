@@ -8,13 +8,7 @@ if(isset($_GET['delete_id']))
  header("id;
  }
 }
-function delete_id(id)
-{
- if(confirm('Are you sure you want to Delete ?'))
- {
-  window.location.href='MyHomePage.php?delete_id='+id;
- }
-}
+function
 </script>
 
 <title>My Home Page</title>
