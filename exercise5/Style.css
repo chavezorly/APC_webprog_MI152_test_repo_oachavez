@@ -14,15 +14,6 @@ table {
 position:absolute;          
 }
 
-.trivia{
-top: 980px;
-position:absolute;
-color: white;
-border: 5px solid white;
-left: 10px;
-width: 50%
-}   
-
 td, th {
     border: 1px solid #dddddd;
     text-align: center;

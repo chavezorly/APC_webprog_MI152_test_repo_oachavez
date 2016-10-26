@@ -7,19 +7,7 @@ if(isset($_POST['btn-save']))
  $firstname = $_POST['firstname'];
  $lastname = $_POST['lastname'];
  $midname = $_POST['midname'];
- $email = $_POST['email'];
- $gender = $_POST['gender'];
- $nickname = $_POST['nickname'];
- $homeadd = $_POST['homeadd'];
- $cellno = $_POST['cellno'];
- $comment = $_POST['comment'];
- // variables for input data
- 
- // sql query for inserting data into database
- 
-        $sql_query = "INSERT INTO users(lastname,firstname,midname,email,gender,nickname,homeadd,cellno,comment) VALUES('$lastname','$firstname','$midname','$email','$gender','$nickname','$homeadd','$cellno','$comment')";
- mysql_query($sql_query);
-        
+ $email = $_POST
         // sql query for inserting data into database
  
 }
