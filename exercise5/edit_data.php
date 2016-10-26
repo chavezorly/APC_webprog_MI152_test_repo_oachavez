@@ -1,5 +1,5 @@
 <?php
-include_once 'dbconfig.php';
+include_once 'dbconfig.php';    
 if(isset($_GET['edit_id']))
 {
  $sql_query="SELECT * FROM users WHERE user_id=".$_GET['edit_id'];
