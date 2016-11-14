@@ -11,14 +11,7 @@
 	
 <body> 
    
-      <h2>Guest user? <a href = "<?php echo base_url(); ?>index.php/users/add_view">Fill up the form here</a></h2>	
-	
-	  <div id="body">
- 	  <div id="content">
-      <table align = "center" border = "1"> 
-         <tr>
-         <th colspan= "11"> User list</th>
-         </tr>
+     
          <?php 
             $i = 1; 
             echo "<tr>"; 
