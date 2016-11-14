@@ -3,7 +3,9 @@
 <html lang = "en">
  
    <head> 
-
+      <meta charset = "utf-8"> 
+      <title>Students Example</title> 
+      <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/style.css"> 
    </head> 
    <body> 
    <center>
@@ -24,7 +26,40 @@
             echo "<br/>"; 
              echo "<br/>"; 
 				
-			
+				echo form_label('First Name'); 
+            echo form_input(array('id'=>'firstname','name'=>'firstname')); 
+            echo "<br/>"; 
+             echo "<br/>"; 
+            
+            echo form_label('Middle Name'); 
+            echo form_input(array('id'=>'midname','name'=>'midname')); 
+            echo "<br/>"; 
+             echo "<br/>"; 
+
+            echo form_label('Email '); 
+            echo form_input(array('id'=>'email','name'=>'email')); 
+            echo "<br/>"; 
+             echo "<br/>"; 
+
+            echo form_label('Gender'); 
+            echo form_input(array('id'=>'gender','name'=>'gender')); 
+            echo "<br/>"; 
+             echo "<br/>"; 
+
+            echo form_label('Nickname'); 
+            echo form_input(array('id'=>'nickname','name'=>'nickname')); 
+            echo "<br/>"; 
+             echo "<br/>"; 
+            
+			echo form_label('Home Address'); 
+            echo form_input(array('id'=>'homeadd','name'=>'homeadd')); 
+            echo "<br/>"; 
+             echo "<br/>"; 
+             
+              echo form_label('Cellphone No.'); 
+            echo form_input(array('id'=>'cellno','name'=>'cellno')); 
+            echo "<br/>"; 
+             echo "<br/>"; 
              
 			
             echo form_submit(array('id'=>'submit','value'=>'Add')); 
