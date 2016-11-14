@@ -51,9 +51,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 
-$route['users'] = "Users_controller"; 
-$route['users/add'] = 'Users_controller/add_student'; 
-$route['users/add_view'] = 'Users_controller/add_student_view'; 
-$route['users/edit/(\d+)'] = 'Users_controller/update_student_view/$1'; 
-$route['users/delete/(\d+)'] = 'Users_controller/delete_student/$1';
+
 
