@@ -24,15 +24,7 @@
          $this->load->model('Users_Model');
 			
          $data = array( 
-            'user_id' => $this->input->post('user_id'), 
-            'lastname' => $this->input->post('lastname'), 
-            'firstname' => $this->input->post('firstname'), 
-            'midname' => $this->input->post('midname'), 
-            'email' => $this->input->post('email'), 
-            'gender' => $this->input->post('gender'), 
-			'nickname' => $this->input->post('nickname'), 
-			'homeadd' => $this->input->post('homeadd'), 
-			'cellno' => $this->input->post('cellno') 
+           
          ); 
 			
          $this->Users_Model->insert($data); 
