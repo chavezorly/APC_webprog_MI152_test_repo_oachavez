@@ -20,7 +20,7 @@
             echo form_label('User Id'); 
             echo form_input(array('id'=>'user_id',
             'name'=>'user_id','value'=>$records[0]->user_id)); 
-            echo "<br/>"; 
+            echo "<br/>";  
              echo "<br/>"; 
 				
             echo form_label('Last Name'); 
