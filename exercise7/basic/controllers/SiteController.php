@@ -122,4 +122,13 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+	
+	public function actionUser()
+	{
+		$mode = new UserFormModel;
+		
+		if($model->load->(Yii:$app->request->post())&& $model-> validate())
+	}else{
+		return $this->render(userFormModel,['model=>$model]);
+	}
 }
