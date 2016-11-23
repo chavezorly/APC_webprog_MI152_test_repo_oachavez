@@ -5,6 +5,12 @@ use yii\widgets\ActiveForm;
 
 ?>
 
+<?php
+	if(Yii::$app->session->hasFlash('success')){
+		echo Yii::$app->session->getFlash('success');
+	}
+?>
+
 <?php $form = ActiveForm::begin(); ?>
 <?= $form->field($model,'firstName'); ?>
 <?= $form->field($model,'lastName'); ?>
@@ -16,3 +22,5 @@ use yii\widgets\ActiveForm;
 <?= $form->field($model,'cellphoneNo'); ?>
 
 <?= Html::submitButton('Submit',['class'=>'btn btn-success']); ?>
+
+<?php $form = ActiveForm::end(); ?>﻿
