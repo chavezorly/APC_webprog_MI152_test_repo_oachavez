@@ -130,9 +130,9 @@ class SiteController extends Controller
 		
 		if($model->load(Yii::$app->request->post()) && $model->validate())
 		{
-			
-		}else{
-			return $this->render('userFormView',['model'=>$model]);
+			Yii::$app->session->setFlash('success','Your data has been entered successfuly');
 		}
+			return $this->render('userFormView',['model'=>$model]);
+		
 	}
 }
