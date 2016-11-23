@@ -14,15 +14,14 @@ class UserFormModel extends Model
 	public $homeAddress;
 	public $cellphoneNo;
 	
-	public function restrictions()
+	public function rules()
 	{
 		return 
 		[
-		[['firstname','lastname','email','gender','cellphoneNo'],'required'],
+		[['firstName','lastName','email','gender','cellphoneNo'],'required'],
+		
 		['email','email'],
 		];
 	}
 	
 }
-
-?>
