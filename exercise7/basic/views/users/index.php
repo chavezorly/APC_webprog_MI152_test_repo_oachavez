@@ -1,13 +1,41 @@
 <?php
 
-foreach($users as user){
-	echo $user->lastName."<br>";
-	echo $user->firstName."<br>";
-	echo $user->middleName."<br>";
-	echo $user->email."<br>";
-	echo $user->gender."<br>";
-	echo $user->nickname."<br>";
-	echo $user->homeAddress."<br>";
-	echo $user->cellphoneNo."<br>";
-}
+use yii\helpers\Html;
+use yii\grid\GridView;
+
+/* @var $this yii\web\View */
+/* @var $searchModel app\models\UsersSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$this->title = 'Users';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
+<div class="users-index">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
+    <p>
+        <?= Html::a('Create Users', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            'user_id',
+            'lastName',
+            'firstName',
+            'middleName',
+            'email:email',
+            // 'gender',
+            // 'nickname',
+            // 'homeAddress',
+            // 'cellphoneNo',
+            // 'comment',
+
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
+</div>

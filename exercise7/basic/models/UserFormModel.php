@@ -19,8 +19,8 @@ class UserFormModel extends Model
 		return 
 		[
 		[['firstName','lastName','email','gender','cellphoneNo'],'required'],
-		
 		['email','email'],
+		[['cellphoneNo'], 'integer'],
 		];
 	}
 	
