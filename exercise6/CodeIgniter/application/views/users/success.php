@@ -9,6 +9,6 @@
    </head> 
    <body> 
    <center>
-<p id="note">News added successfully!</p>
+<p id="note">User added successfully!</p>
 </body>
 </html>
