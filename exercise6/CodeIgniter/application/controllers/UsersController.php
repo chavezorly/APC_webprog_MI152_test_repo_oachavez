@@ -84,7 +84,7 @@ class UsersController extends CI_Controller {
         $this->form_validation->set_rules('nickname', 'Nickname', 'required');
         $this->form_validation->set_rules('cellno', 'Cellphone number', 'required');
         $this->form_validation->set_rules('cellno','Cellphone number', 'integer');
-        $this->form_validation->set_rules('lastname','Last Name', 'letters');
+        $this->form_validation->set_rules('lastname','Last Name', 'alpha');
  
         if ($this->form_validation->run() === FALSE)
         {
