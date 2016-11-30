@@ -13,7 +13,7 @@ $this->title = 'My Yii Application';
 
 	<title>My Home Page</title>
 
-	<link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/Style.css"> 
+	<link rel = "stylesheet" type = "text/css" href = "css/Style.css"> 
 	
 <body> 
 
@@ -34,7 +34,7 @@ $this->title = 'My Yii Application';
   <tr>
   
     <td id="name" style="display:none">Orly Aguila Chavez<br> 
-    <img src="<?php echo base_url(); ?>uploads/me.jpg" alt="Formal Photo:" style="width:300px;height:450px;" /> 
+    <img src="uploads/me.jpg" alt="Formal Photo:" style="width:300px;height:450px;" /> 
     </td>
     
     <td id="nickname" style="display:none">Orly</td>
@@ -42,40 +42,40 @@ $this->title = 'My Yii Application';
     <td id="hobbies" style="display:none">
 	<br>
 	Playing Volleyball <br>
-	<img src="<?php echo base_url(); ?>uploads/volley.jpg" style="width:304px;height:180px;"> <br>
+	<img src="uploads/volley.jpg" style="width:304px;height:180px;"> <br>
 	Basketball<br>
-	<img src="<?php echo base_url(); ?>uploads/bask.jpg" style="width:304px;height:180px;"> <br>	
+	<img src="uploads/bask.jpg" style="width:304px;height:180px;"> <br>	
 	Guitar<br>
-	<img src="<?php echo base_url(); ?>uploads/guit.jpg" style="width:304px;height:180px;"> <br>	
+	<img src="uploads/guit.jpg" style="width:304px;height:180px;"> <br>	
 	Computer Games<br>
-	<img src="<?php echo base_url(); ?>uploads/comp.jpg" style="width:304px;height:180px;">
+	<img src="uploads/comp.jpg" style="width:304px;height:180px;">
 	</td>
 	
 	<td id="interests" style="display:none">
 	<br>
 	Java Programming<br>
-	<img src="<?php echo base_url(); ?>uploads/java.gif" alt="Java" style="width:304px;height:180px;"> <br>
+	<img src="uploads/java.gif" alt="Java" style="width:304px;height:180px;"> <br>
 	Visual Basic Programming<br>
-	<img src="<?php echo base_url(); ?>uploads/vb.gif" alt="Visual Basic" style="width:304px;height:180px;"> <br>
+	<img src="uploads/vb.gif" alt="Visual Basic" style="width:304px;height:180px;"> <br>
 	Database<br>
-	<img src="<?php echo base_url(); ?>uploads/database.gif" alt="Database" style="width:304px;height:180px;"> <br>
+	<img src="uploads/database.gif" alt="Database" style="width:304px;height:180px;"> <br>
 	HTML<br>
-	<img src="<?php echo base_url(); ?>uploads/html1.gif" alt="HTML5 Icon" style="width:304px;height:180px;"> 
+	<img src="uploads/html1.gif" alt="HTML5 Icon" style="width:304px;height:180px;"> 
 	</td>
 
 
 	<td id="websites" style="display:none">
 	<a href="http://www.w3schools.com">
-	<img src="<?php echo base_url(); ?>uploads/w3.png" alt="w3schools" style="width:80px;height:80px;">
+	<img src="uploads/w3.png" alt="w3schools" style="width:80px;height:80px;">
 	</a><br>
 	<a href="https://www.khanacademy.org">
-	<img src="<?php echo base_url(); ?>uploads/khan.png" alt="khanAcademy" style="width:80px;height:150px;">
+	<img src="uploads/khan.png" alt="khanAcademy" style="width:80px;height:150px;">
 	</a><br>	
 	<a href="https://www.facebook.com">
-	<img src="<?php echo base_url(); ?>uploads/fb.png" alt="Facebook" style="width:80px;height:80px;">
+	<img src="uploads/fb.png" alt="Facebook" style="width:80px;height:80px;">
 	</a> <br>
 	<a href="https://www.youtube.com">
-	<img src="<?php echo base_url(); ?>uploads/youtube.png" alt="Youtube" style="width:180px;height:180px;">
+	<img src="uploads/youtube.png" alt="Youtube" style="width:180px;height:180px;">
 	</a>
 	</td>
   </tr
