@@ -74,15 +74,17 @@ class UsersController extends CI_Controller {
         
         $this->load->helper('form');
         $this->load->library('form_validation');
-        
+
         $data['title'] = 'Edit users';        
         $data['users_item'] = $this->users_model->get_users_by_id($id);
         
         $this->form_validation->set_rules('lastname', 'Last Name', 'required');
         $this->form_validation->set_rules('firstname', 'First Name', 'required');
+        $this->form_validation->set_rules('email', 'Email', 'required');
         $this->form_validation->set_rules('nickname', 'Nickname', 'required');
         $this->form_validation->set_rules('cellno', 'Cellphone number', 'required');
-        $this->form_validation->set_rules('email', 'Email', 'required');
+        $this->form_validation->set_rules('cellno','Cellphone number', 'integer');
+        $this->form_validation->set_rules('lastname','Last Name', 'letters');
  
         if ($this->form_validation->run() === FALSE)
         {
