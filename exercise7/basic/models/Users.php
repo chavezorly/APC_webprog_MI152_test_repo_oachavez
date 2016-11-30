@@ -34,7 +34,7 @@ class Users extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-           [['lastName', 'firstName', 'email', 'gender', 'nickname', 'cellphoneNo'], 'required'],
+            [['lastName', 'firstName', 'email', 'gender', 'nickname', 'cellphoneNo'], 'required'],
             [['homeAddress', 'middleName'], 'safe'],
             [['cellphoneNo'], 'integer'],
             [['email'], 'email'],
