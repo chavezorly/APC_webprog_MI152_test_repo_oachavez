@@ -17,7 +17,8 @@ $this->title = 'My Yii Application';
 	
 <body> 
 
-<h2>About Me</h2>
+<h2> About Me || <a href = "index.php?r=users%2Findex"> Create Database </a></h2>
+
 <p id="note">Note: the table headings are clickable, try to press it to see the content</p><br>
 
 <div class="tables">
