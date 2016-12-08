@@ -1,5 +1,5 @@
 body {
-    background: url('http://localhost/exercise6/codeigniter/uploads/back.jpg');
+    background: url('http://localhost/exercise7/basic/web/uploads/back.jpg');
 }
 
 table {
@@ -19,7 +19,7 @@ top: 980px;
 position:absolute;
 color: white;
 border: 5px solid white;
-left: 10px;
+left: 10px;	
 width: 50%
 }
 
@@ -40,7 +40,7 @@ color: rgb(156, 159, 163);
 }
 
 h2, a{
-color: rgb(56, 159, 163);
+color: rgb(56, 159, 163)
 font-size: 30px;
 }
 
@@ -93,4 +93,8 @@ color: rgb(213, 221, 234);
 
 .grays {
 color: rgb(156, 159, 163);
+}
+
+button {
+color: rgb(56, 159, 163);
 }
