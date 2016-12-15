@@ -1,6 +1,7 @@
 <?php
 
 /* @var $this yii\web\View */
+use yii\helpers\Html;
 
 $this->title = 'My Yii Application';
 ?>
@@ -83,58 +84,41 @@ $this->title = 'My Yii Application';
 </table>
 </div>
 
+<div class="box">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+    $("#show").click(function(){
+        $("answers").toggle(500);
+    });
+});
+</script>
 
-<div class="trivia">
+<h1>Trivias</h1>
+<p></p>
+        <?php
+			if (Yii::$app->user->isGuest) {
+				
+			} elseif(Yii::$app->user->identity->username) {
+				echo Html::a('Edit a Trivia', ['trivia/index'], ['class' => 'btn btn-success']);
+			}
+			?>
 
-<h2>Wanna know some trivias about me? 
-<button type="button" onclick="document.getElementById('triviaa').style.display='block'">click here!</button>
-</h2>
-
-
-<div id="triviaa" style="display:none">
-
+<br></br>
 <ul>
-<li class="question"> What do you think is my main sport?
+<?php foreach ($trivias as $trivia): ?>
+
+    <li>
+        <strong><?= Html::encode("{$trivia->question}") ?>:</strong>
+		<br></br>	
+		<answers style=display:none><?= $trivia->answer ?></answers>
+		<br></br>	
+    </li>	
+<?php endforeach; ?>
+<button id="show">Show all answer</button>
+<p></p>
 </ul>
-
-<p id="volley" style="display:none">Some might think this is obvious because I placed it first in my hobbies so yes, It's Volleyball! and guess what, I became a captain ball in this sport</p>
-<button type="button" onclick="document.getElementById('volley').style.display='block'">Show the answer!</button>
-
-<ul>
-<li  class="question"> Try guessing my favorite online game
-</ul>
-
-<p id="csgo" style="display:none">I'm not a big fan and a player of LOL or DOTA just like my classmates but i know how to play those. However I'm a player of CS:GO, and my highest rank achievement is Legendary Eagle </p>
-<button type="button" onclick="document.getElementById('csgo').style.display='block'">Show the answer!</button>
-
-<ul>
-<li  class="question"> Here's the interesting part, taking this I.T. major is my second choice/option wanna know if what is my first choice?
-</ul>
-
-<p id="milit" style="display:none"> My biggest dream is to be in the military, I took up the PMAEE and I passed it. Unluckily I failed in Medical examination because they diagnosed something and that's why I took I.T. Major</p>
-<button type="button" onclick="document.getElementById('milit').style.display='block'">Show the answer!</button>
-
-<ul>
-<li  class="question"> My favorite Foods
-</ul>
-<p id="food" style="display:none"> Chicken Adobo, Chicken Curry, Beef and Pork steak</p>
-<button type="button" onclick="document.getElementById('food').style.display='block'">Show the answer!</button>
-
-<ul>
-<li  class="question"> Among those interests listed above, can you gess which one is my favorite? 
-</ul>
-<p id="inte" style="display:none"> Visual Basic Programming </p>
-<button type="button" onclick="document.getElementById('inte').style.display='block'">Show the answer!</button>
-</div>
-</div>
-
-<div id="changefont">
-<button type="button" onclick="document.getElementById('triviaa').style.fontFamily='monospace'">Click Me to change font</button>
-</div>
-<p id="note2">Note: Make sure all of the buttons were clicked before pressing these buttons to see the transition.
-</p>
-<div id="changefontsize">
-<button type="button" onclick="document.getElementById('triviaa').style.fontSize='25px'">Click Me to change font Size</button>
 </div>
    </body>
 	
